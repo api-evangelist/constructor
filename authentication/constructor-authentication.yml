@@ -1,0 +1,43 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.constructor.com/reference/main-authentication
+docs: https://docs.constructor.com/reference/main-authentication
+host: https://ac.cnstrc.com
+summary:
+  types: [apiKey, http]
+  api_key_in: [query]
+  http_schemes: [basic, bearer]
+  oauth2_flows: []
+  notes: >-
+    Two credentials. A public API KEY identifies the index and is passed as the
+    `key` query parameter on read/tracking calls. A private API TOKEN
+    authenticates privileged calls and is passed either as the Basic Auth
+    username (no password) or as an Authorization: Bearer token. Newer Bearer
+    tokens carry explicit permission scopes (read `r`, write `w`, or read-write
+    `rw`) that can be restricted to specific API keys. This is token-based auth,
+    not OAuth 2.0.
+schemes:
+  - name: apiKey
+    type: apiKey
+    in: query
+    parameter: key
+    description: Public index identifier used on autocomplete/search/browse/tracking requests.
+    scope: public
+  - name: apiTokenBasic
+    type: http
+    scheme: basic
+    description: >-
+      Private API token supplied as the Basic Auth username with an empty
+      password, on privileged (catalog/config) endpoints.
+    scope: private
+  - name: apiTokenBearer
+    type: http
+    scheme: bearer
+    description: >-
+      Private API token supplied as Authorization: Bearer <token>. Bearer tokens
+      support scoped permissions (r / w / rw) that may be limited to specific API keys.
+    scope: private
+    permission_scopes:
+      - {code: r, meaning: read}
+      - {code: w, meaning: write}
+      - {code: rw, meaning: read-write}
