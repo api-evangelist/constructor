@@ -1,0 +1,43 @@
+generated: '2026-07-18'
+method: searched
+source: https://releases.constructor.io/
+scheme: date-based
+current_version: null
+notes: Releases are identified by date; no semantic version scheme is used.
+entries:
+  - date: '2026-07'
+    title: Collections in Offsite Discovery
+    type: addition
+    highlight: Collections can now be used in notification campaigns alongside recommendation pods for curated assortments.
+  - date: '2026-06'
+    title: Badges in Recommendations
+    type: addition
+    highlight: Visual badge labels now display on recommended items for consistency across Search, Browse, and recommendations.
+  - date: '2026-06'
+    title: Image Search with Segmentation
+    type: addition
+    highlight: Image Search v2 adds automatic object detection so scene photos return results per identified item.
+  - date: '2026-06'
+    title: Product Details API for PDP Enrichment
+    type: addition
+    highlight: New endpoints fetch enriched product data by item and variation for product detail pages.
+  - date: '2026-06'
+    title: More Scalable Retrieval for Items & Variations
+    type: addition
+    highlight: Cursor-based pagination introduced for /v2/items and /v2/variations for large catalogs.
+  - date: '2026-06'
+    title: Export a Snapshot of Your Catalog
+    type: addition
+    highlight: On-demand catalog exports via the Tasks API for validation and downstream processing.
+  - date: '2026-06'
+    title: Rule Performance Insights in Searchandising
+    type: addition
+    highlight: Merchandisers can view performance metrics directly in search and browse rule tables.
+  - date: '2026-05'
+    title: New Merchandising Toolkit for Recommendations
+    type: addition
+    highlight: Ranged Slotting, variation filtering, and CSV import/export for recommendation campaigns.
+  - date: '2026-04'
+    title: Schedule Items Inside a Collection
+    type: addition
+    highlight: Scheduled Item Sets allow time-bound product rotations within a collection.

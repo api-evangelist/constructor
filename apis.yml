@@ -1,8 +1,15 @@
 aid: constructor
 name: Constructor
-description: 'Constructor is a company surfaced as a portfolio company of sapphire-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: ecommerce. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Constructor is an AI-powered ecommerce product discovery and search platform.
+  Its Commerce Reasoning Engine interprets shopper behavior, context, and intent
+  to personalize results across Autocomplete, Search (including Natural Language
+  and Image Search), Browse, Recommendations, Quizzes, Collections, Retail Media
+  (Sponsored Listings and Display Ads), and AI Shopping Agents. Retailers
+  integrate over a REST API at ac.cnstrc.com plus first-party SDKs (JavaScript,
+  Node, Python, Ruby, Java, .NET, Swift, Android) and React UI component
+  libraries, manage catalogs and searchandising configuration, and track
+  behavioral beacons. Constructor is a portfolio company of Sapphire Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/constructor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,13 +17,51 @@ x-backed-by:
 - sapphire-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://constructor.com/hubfs/constructor-featured-image-2026.png
 tags:
 - Company
 - Ecommerce
-apis: []
+- Search
+- Product Discovery
+- Recommendations
+- Personalization
+- Retail
+- AI
+apis:
+- name: Constructor API
+  description: >-
+    REST API for AI-powered product discovery — autocomplete, search, browse,
+    recommendations, quizzes, catalog management, searchandising, and behavioral
+    tracking. A public API key identifies the index; a private API token
+    authenticates privileged calls.
+  humanURL: https://docs.constructor.com/
+  baseURL: https://ac.cnstrc.com
+  tags:
+  - Search
+  - Product Discovery
+  - Ecommerce
+  properties:
+  - type: Documentation
+    url: https://docs.constructor.com/
+  - type: APIReference
+    url: https://docs.constructor.com/reference/main-readme
+  - type: Authentication
+    url: https://docs.constructor.com/reference/main-authentication
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +70,58 @@ maintainers:
 common:
 - type: Website
   url: https://constructor.com/
+- type: DeveloperPortal
+  url: https://docs.constructor.com/
+- type: Documentation
+  url: https://docs.constructor.com/
+- type: APIReference
+  url: https://docs.constructor.com/reference/main-readme
+- type: GettingStarted
+  url: https://docs.constructor.com/docs
+- type: Authentication
+  url: authentication/constructor-authentication.yml
+- type: SDKs
+  url: packages/constructor-packages.yml
+- type: Packages
+  url: packages/constructor-packages.yml
+- type: CLI
+  url: cli/constructor-cli.yml
+- type: Components
+  url: components/constructor-components.yml
+- type: MCPServer
+  url: mcp/constructor-mcp.yml
+- type: LLMsTxt
+  url: llms/constructor-llms.txt
+- type: Conventions
+  url: conventions/constructor-conventions.yml
+- type: ErrorCatalog
+  url: errors/constructor-error-codes.yml
+- type: Lifecycle
+  url: lifecycle/constructor-lifecycle.yml
+- type: ChangeLog
+  url: changelog/constructor-changelog.yml
+- type: ReleaseNotes
+  url: https://releases.constructor.io/
+- type: Conformance
+  url: conformance/constructor-conformance.yml
+- type: Compliance
+  url: https://constructor.com/security-and-compliance
+- type: TrustCenter
+  url: security/constructor-trust-center.yml
+- type: DomainSecurity
+  url: security/constructor-domain-security.yml
+- type: Blog
+  url: https://constructor.com/blog
+- type: GitHubOrganization
+  url: https://github.com/Constructor-io
+- type: SignUp
+  url: https://app.constructor.io/users/sign_in
+- type: TermsOfService
+  url: https://constructor.com/terms-of-service-agreement/
+- type: PrivacyPolicy
+  url: https://constructor.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: https://constructor.com/security-and-compliance + https://docs.constructor.com/reference/main-authentication
+standards:
+  - id: soc2-type2
+    conforms: true
+    evidence: Service independently audited under SOC 2 Type 2 (reports via NDA).
+  - id: iso-27001
+    conforms: true
+    evidence: Service independently audited under the ISO 27001 framework.
+  - id: ccpa
+    conforms: true
+    evidence: CCPA compliance referenced on the security & compliance page.
+  - id: owasp-top-10
+    conforms: true
+    evidence: States coverage of all OWASP Top 10 web application security risks.
+  - id: nist-secure-coding
+    conforms: true
+    evidence: States compliance with NIST coding practices to minimize attack surface.
+  - id: mach-certified
+    conforms: true
+    evidence: MACH Alliance certification badge displayed.
+  - id: oauth2
+    conforms: false
+    evidence: Token-based auth (API key + Basic/Bearer token with r/w/rw scopes), not OAuth 2.0.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors are HTTP status codes with a JSON message, not application/problem+json.
+compliance_programs:
+  - SOC 2 Type 2
+  - ISO 27001
+  - CCPA
+  - MACH Certified

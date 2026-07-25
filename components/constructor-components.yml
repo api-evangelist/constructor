@@ -1,0 +1,48 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.constructor.com/docs/integrating-with-constructor-open-source-libraries-ui-libraries + https://github.com/Constructor-io
+description: >-
+  Client-side / embeddable React UI component libraries that render Constructor
+  product-discovery surfaces (autocomplete, search/browse PLPs, quizzes,
+  recommendations, and the AI Product Insights Agent). Distinct from the
+  server/client SDKs catalogued in packages/.
+families:
+  - name: Autocomplete UI
+    package: "@constructor-io/constructorio-ui-autocomplete"
+    version: 1.30.1
+    url: https://www.npmjs.com/package/@constructor-io/constructorio-ui-autocomplete
+    repo: https://github.com/Constructor-io/constructorio-ui-autocomplete
+    surface: Prebuilt autocomplete/typeahead search dropdown
+  - name: Product Listing Pages (PLP) UI
+    package: "@constructor-io/constructorio-ui-plp"
+    version: 1.19.1
+    url: https://www.npmjs.com/package/@constructor-io/constructorio-ui-plp
+    repo: https://github.com/Constructor-io/constructorio-ui-plp
+    surface: Search and Browse product listing pages with facets/sorting
+  - name: Quizzes UI
+    package: "@constructor-io/constructorio-ui-quizzes"
+    version: 1.21.0
+    url: https://www.npmjs.com/package/@constructor-io/constructorio-ui-quizzes
+    repo: https://github.com/Constructor-io/constructorio-ui-quizzes
+    surface: Guided-selling product-finder quiz flows
+  - name: Recommendations UI
+    package: "@constructor-io/constructorio-ui-recommendations"
+    version: 1.0.0
+    url: https://www.npmjs.com/package/@constructor-io/constructorio-ui-recommendations
+    repo: https://github.com/Constructor-io/constructorio-ui-recommendations
+    surface: Recommendation pods / carousels
+  - name: Product Insights Agent (PIA) UI
+    package: "@constructor-io/constructorio-ui-pia"
+    version: 2.9.0
+    url: https://www.npmjs.com/package/@constructor-io/constructorio-ui-pia
+    repo: https://github.com/Constructor-io/constructorio-ui-pia
+    surface: AI Product Insights Agent conversational shopping widget
+  - name: Shared UI Components
+    package: "@constructor-io/constructorio-ui-components"
+    version: 1.6.0
+    url: https://www.npmjs.com/package/@constructor-io/constructorio-ui-components
+    repo: https://github.com/Constructor-io/constructorio-ui-components
+    surface: Shared React + TypeScript component primitives reused across the UI libs
+loader_libraries:
+  - "@constructor-io/constructorio-client-javascript (data layer for the UI libs)"
+  - "@constructor-io/constructorio-id (identity/session for client tracking)"

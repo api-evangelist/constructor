@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/package/@constructor-io/constructorio-connect-cli + https://github.com/Constructor-io
+name: constructorio-connect-cli
+package: "@constructor-io/constructorio-connect-cli"
+version: 1.23.0
+official: true
+description: >-
+  Official CLI for interfacing with the Constructor Connect ecosystem —
+  catalog/data-feed integration workflows between a retailer's systems and
+  Constructor.
+install:
+  - method: npm
+    command: npm install -g @constructor-io/constructorio-connect-cli
+surface:
+  detail: >-
+    Command-line tool for the Constructor Connect data-integration ecosystem
+    (catalog and feed operations). See the package README for the full command
+    reference.
+notes: >-
+  The CLI binary itself is catalogued in packages/constructor-packages
+  ecosystem; this artifact records its command surface.

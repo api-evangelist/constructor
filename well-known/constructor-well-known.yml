@@ -1,0 +1,19 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/* on constructor.com, docs.constructor.com, ac.cnstrc.com
+hosts:
+  - host: https://constructor.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+  - host: https://docs.constructor.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+  - host: https://ac.cnstrc.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+notes: >-
+  No /.well-known/ discovery documents are published on any Constructor host as
+  of this pass. Recorded for auditability; no WellKnown/SecurityTxt pointer wired.

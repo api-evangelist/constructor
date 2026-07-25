@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.constructor.com/reference/main-readme
+format: http-status
+envelope: >-
+  Errors are returned with a standard HTTP status code and a JSON body carrying
+  a human-readable message describing the failure.
+error_codes:
+  - status: 400
+    title: Bad request
+    meaning: The request is invalid (malformed parameters or body).
+    remediation: Validate request parameters and payload against the API reference.
+  - status: 401
+    title: Unauthorized
+    meaning: The API token is missing or incorrect.
+    remediation: Provide a valid API token via Basic Auth username or Authorization Bearer header.
+  - status: 403
+    title: Forbidden
+    meaning: Authorization to access the requested resource was not granted.
+    remediation: Confirm the token's permission scope (r/w/rw) covers the resource and API key.
+  - status: 404
+    title: Not found
+    meaning: The requested resource could not be found.
+    remediation: Verify the endpoint path, index key, and resource identifiers.
+  - status: 405
+    title: Method not allowed
+    meaning: The resource is not available with the request method used.
+    remediation: Use the HTTP method documented for the endpoint.
+  - status: 429
+    title: Too many requests
+    meaning: Rate limiting has been applied.
+    remediation: Retry with exponential backoff.
+  - status: 500
+    title: Internal server error
+    meaning: An issue occurred while processing the request.
+    remediation: Retry; if persistent, contact Constructor support.
+  - status: 503
+    title: Service unavailable
+    meaning: The requested resource is temporarily offline.
+    remediation: Retry with backoff.

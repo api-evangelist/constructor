@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.constructor.com/ + https://releases.constructor.io/
+versioning:
+  scheme: uri-path
+  current: v2
+  detail: Endpoints are versioned in the URL path; v1 and v2 endpoints coexist.
+changelog:
+  url: https://releases.constructor.io/
+  scheme: date-based
+deprecation:
+  policy_url: null
+  sunset_header: false
+  detail: No formal public deprecation policy or RFC 8594 Sunset/Deprecation header support documented.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+notes: >-
+  No public status page (status.constructor.com does not resolve) and no
+  published deprecation policy were found as of this pass. Release history is
+  the date-based changelog at releases.constructor.io.

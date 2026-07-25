@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.constructor.com/reference/main-readme + https://releases.constructor.io/
+host: https://ac.cnstrc.com
+authentication:
+  style: token
+  detail: >-
+    Public API `key` query parameter identifies the index; private API token via
+    Basic Auth username or Authorization Bearer header for privileged calls.
+    See authentication/constructor-authentication.yml.
+versioning:
+  scheme: uri-path
+  detail: Endpoints are versioned in the path (e.g. /v1/..., /v2/items, /v2/variations).
+pagination:
+  styles:
+    - name: page-based
+      detail: >-
+        Search/Browse results use page-number pagination with parameters such as
+        page and num_results_per_page.
+    - name: cursor-based
+      detail: >-
+        Large catalog retrieval endpoints (/v2/items and /v2/variations) use
+        cursor-based pagination for reliable iteration over large catalogs.
+error_envelope:
+  detail: >-
+    Standard HTTP status codes (400/401/403/404/405/429/500/503) with a JSON
+    body containing a human-readable message. See errors/constructor-error-codes.yml.
+rate_limiting:
+  signal: HTTP 429 Too many requests
+  guidance: Retry with exponential backoff on 429.
+idempotency:
+  supported: false
+  detail: No idempotency-key contract is documented by Constructor.
+transport:
+  https_required: true
+cross_links:
+  errors: errors/constructor-error-codes.yml
+  authentication: authentication/constructor-authentication.yml
+  lifecycle: lifecycle/constructor-lifecycle.yml
+  changelog: changelog/constructor-changelog.yml
