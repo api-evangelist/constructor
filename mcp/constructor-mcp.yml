@@ -6,22 +6,23 @@ server:
   name: constructor-docs
   transport: http
   url: https://docs.constructor.com/mcp
-  description: >-
-    Official remote MCP server hosted by Constructor. Gives AI development tools
-    (Cursor, Windsurf, Claude Desktop, Claude Code) direct access to Constructor
-    documentation and API functionality — searching the docs, retrieving API
-    examples/integration code, and generating tailored Constructor integration
+  description: Official remote MCP server hosted by Constructor. Gives AI development tools (Cursor, Windsurf,
+    Claude Desktop, Claude Code) direct access to Constructor documentation and API functionality — searching
+    the docs, retrieving API examples/integration code, and generating tailored Constructor integration
     code. Authentication can be supplied via client-configured request headers.
 clients:
-  - Cursor
-  - Windsurf
-  - Claude Desktop
-  - Claude Code
+- Cursor
+- Windsurf
+- Claude Desktop
+- Claude Code
 capabilities:
-  - Search and query the Constructor documentation
-  - Retrieve API reference examples and integration code samples
-  - Generate integration code for specific Constructor use cases
-notes: >-
-  This is a documentation/developer-assistance MCP server. The underlying
-  product APIs (Search, Autocomplete, Browse, Recommendations, Catalog) remain
-  REST over https://ac.cnstrc.com.
+- Search and query the Constructor documentation
+- Retrieve API reference examples and integration code samples
+- Generate integration code for specific Constructor use cases
+notes: This is a documentation/developer-assistance MCP server. The underlying product APIs (Search, Autocomplete,
+  Browse, Recommendations, Catalog) remain REST over https://ac.cnstrc.com.
+deployment:
+  mode: remote
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
