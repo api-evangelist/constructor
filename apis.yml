@@ -35,6 +35,15 @@ modified: '2026-07-18'
 image: https://constructor.com/hubfs/constructor-featured-image-2026.png
 tags:
 - Company
+- E-Commerce
+- Search
+- Product Discovery
+- Recommendations
+- Personalization
+- Retail
+- Artificial Intelligence
+tags_raw:
+- Company
 - Ecommerce
 - Search
 - Product Discovery
@@ -52,6 +61,10 @@ apis:
   humanURL: https://docs.constructor.com/
   baseURL: https://ac.cnstrc.com
   tags:
+  - Search
+  - Product Discovery
+  - E-Commerce
+  tags_raw:
   - Search
   - Product Discovery
   - Ecommerce
